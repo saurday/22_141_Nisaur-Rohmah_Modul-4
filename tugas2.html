@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Tugas 2</title>
+        <link rel="stylesheet" href="tugas2.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img7.png" width="65px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#tentang">Tentang</a></li>
+                    <li><a href="#testimoni">Testimoni</a></li>
+                    <li><a href="kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+        <a href="#" class="scroll-to-top">^</a>
+        <div class="banner">
+            <div class="col-2">
+                <h1>Local<br>Munchies</h1>
+                <p>Cocholate Chip Cookies</p>
+                <a href="#" class="btn">Beli Sekarang</a>
+            </div>
+            <div class="col-2">
+                    <img src="img8.png">
+            </div>
+        </div>
+
+            <div class="container">
+            <div class="content">
+                <h3 class="judul-content">Keunggulan Produk Kami</h3>
+                <div class="keunggulan">
+                    <img src="img3.jpg" alt="" width="200px"/>
+                    <p>Coklat Asli Indonesia</p>
+                </div>
+            <div class="keunggulan">
+                <img src="img4.jpg" alt="" width="165px" />
+                <p>Harga Terjangkau</p>
+            </div>
+            <div class="keunggulan">
+                <img src="img5.jpg" alt="" width="270px"/>
+                <p>Dijamin Higienis</p>
+            </div>
+        </div>
+
+        <div class="comment">
+            <h3 class="judul-content">Komentar</h3>
+            <div class="form">
+                <form method="get" accept-charset="utf-8">
+                    <p>E-Mail (Wajib Diisi)</p>
+                    <input type="email" name="email" id="email"/>
+                    <p>Komentar (Wajib Diisi)</p>
+                    <textarea name="komen" id="komen"></textarea>
+                    <br>
+                    <a href="#" class="submit" type="submit">Kirim</a>
+                </form>
+            </div>
+        </div>
+        </div>
+        
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Pesan</h3>
+                        <p>Pesan Sekarang, Antar Sekarang</p>
+                    </div>
+                    <div class="footer-col-2">
+                        <h3>Tentang Kami</h3>
+                        <p>Informasi Lebih Lanjut Tentang Kami</p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Kritik dan Saran</h3>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Ikuti Kami</h3>
+                        <ul>
+                            <li>Instagram</li>
+                            <li>Facebook</li>
+                            <li>YouTube</li>
+                            <li>Twitter</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </div>
+        <script>
+            var scrollToTopBtn = document.querySelector(".scroll-to-top");
+            window.addEventListener("scroll", function() {
+            // tombol Scroll to Top akan muncul setelah pengguna menggulir ke bawah
+            if (window.pageYOffset > 100) {
+            scrollToTopBtn.style.display = "block";
+            } else {
+            scrollToTopBtn.style.display = "none";
+            }
+            });
+
+            scrollToTopBtn.addEventListener("click", function() {
+            window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+            });
+            });
+        </script>
+    </body>
+
+    
+</html>
